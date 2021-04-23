@@ -78,6 +78,10 @@ These goals may or may not be things you have learned in this module but they bu
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+   Session rely on cookies and keeping a list of sessions on the server side. Token rely on the client to store and provide the token with each request
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+   BcryptJs hashes passwords
 3. How are unit tests different from integration and end-to-end testing?
+   Unit tests are for individual functions while integration tests check how thing work together
 4. How does _Test Driven Development_ change the way we write applications and tests?
+   you write a test saying how your function should act and then build the function so the test passes
