@@ -1,13 +1,12 @@
-const jwt = require("jsonwebtoken");
 const { findByUsername } = require("../auth/auth-models");
 
 const checkCredentials = (req, res, next) => {
   let credentials = req.body;
-  console.log(credentials);
   if (
     !credentials.username ||
     !credentials.username.trim() ||
-    !credentials.password
+    !credentials.password ||
+    !credentials.password.trim()
   ) {
     res.status(400).json("username and password required");
   }

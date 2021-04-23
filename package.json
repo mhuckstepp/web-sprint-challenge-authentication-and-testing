@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "migrate": "knex migrate:latest",
+    "migrate": "np",
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand"
   },
   "repository": {

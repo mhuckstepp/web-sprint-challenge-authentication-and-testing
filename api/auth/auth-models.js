@@ -2,7 +2,6 @@ const db = require("../../data/dbConfig");
 
 const add = async (user) => {
   let id = await db("users").insert(user);
-  console.log(id);
   return findById(id);
 };
 
